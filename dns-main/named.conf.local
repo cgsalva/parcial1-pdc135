@@ -1,0 +1,5 @@
+zone "diana.com" {
+    type master;
+    file "/etc/bind/db.diana.com";
+    allow-transfer { any; };
+};

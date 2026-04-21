@@ -1,0 +1,28 @@
+services:
+  dns-main:
+    build: ./dns-main
+    container_name: dns-main
+    networks:
+      dnsnet:
+        ipv4_address: 172.30.0.10
+
+  dns-nachos:
+    build: ./dns-nachos
+    container_name: dns-nachos
+    networks:
+      dnsnet:
+        ipv4_address: 172.30.0.2
+
+  dns-tostecas:
+    build: ./dns-tostecas
+    container_name: dns-tostecas
+    networks:
+      dnsnet:
+        ipv4_address: 172.30.0.3
+
+networks:
+  dnsnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/16

@@ -1,0 +1,12 @@
+$TTL 604800
+@   IN  SOA ns.nachos.diana.com. admin.nachos.diana.com. (
+        4
+        604800
+        86400
+        2419200
+        604800 )
+
+@       IN  NS  ns.nachos.diana.com.
+
+2       IN  PTR ns.nachos.diana.com.
+3       IN  PTR ns.tostecas.diana.com.

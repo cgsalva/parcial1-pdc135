@@ -1,0 +1,18 @@
+zone "nachos.diana.com" {
+    type master;
+    file "/etc/bind/db.nachos.diana.com";
+    allow-transfer { 172.30.0.3; }; // Permite que Tostecas le pida la zona
+    also-notify { 172.30.0.3; };    // Avisa a Tostecas cuando hay cambios
+};
+
+zone "tostecas.diana.com" {
+    type slave;
+    masters { 172.30.0.3; };
+    file "/var/cache/bind/db.tostecas.diana.com";
+};
+
+zone "0.30.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.reverse";
+    allow-transfer { 172.30.0.3; };
+};
