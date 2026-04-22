@@ -9,9 +9,10 @@ $TTL 604800
 @       IN  NS  ns.diana.com.
 ns      IN  A   172.30.0.10
 
-; Delegaciones
+; DELEGACIÓN
 nachos      IN  NS  ns.nachos.diana.com.
 tostecas    IN  NS  ns.tostecas.diana.com.
 
-ns.nachos   IN  A   172.30.0.2
-ns.tostecas IN  A   172.30.0.3
+; GLUE RECORDS
+ns.nachos.diana.com.   IN  A   172.30.0.2
+ns.tostecas.diana.com. IN  A   172.30.0.3

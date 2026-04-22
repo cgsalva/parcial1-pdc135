@@ -14,5 +14,5 @@ zone "nachos.diana.com" {
 zone "0.30.172.in-addr.arpa" {
     type slave;
     masters { 172.30.0.2; };
-    file "/var/cache/bind/db.reverse";
+    file "/var/cache/bind/db.172.30.0";
 };

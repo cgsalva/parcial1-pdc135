@@ -7,6 +7,11 @@ $TTL 604800
         604800 )
 
 @       IN  NS  ns.nachos.diana.com.
+
+; Hace que 'nachos.diana.com' resuelva a su IP
+@       IN  A   172.30.0.2
+
+; Hace que 'ns.nachos.diana.com' resuelva
 ns      IN  A   172.30.0.2
 
 www     IN  A   172.30.0.2

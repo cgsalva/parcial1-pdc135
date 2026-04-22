@@ -13,6 +13,6 @@ zone "tostecas.diana.com" {
 
 zone "0.30.172.in-addr.arpa" {
     type master;
-    file "/etc/bind/db.reverse";
+    file "/etc/bind/db.172.30.0";
     allow-transfer { 172.30.0.3; };
 };
