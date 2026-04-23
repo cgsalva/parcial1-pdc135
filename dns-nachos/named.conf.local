@@ -1,8 +1,8 @@
 zone "nachos.diana.com" {
     type master;
     file "/etc/bind/db.nachos.diana.com";
-    allow-transfer { 172.30.0.3; }; // Permite que Tostecas le pida la zona
-    also-notify { 172.30.0.3; };    // Avisa a Tostecas cuando hay cambios
+    allow-transfer { any; };
+    also-notify { 172.30.0.3; };
 };
 
 zone "tostecas.diana.com" {

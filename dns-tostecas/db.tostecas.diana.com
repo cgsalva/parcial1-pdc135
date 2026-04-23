@@ -11,7 +11,8 @@ $TTL 604800
 ; Hace que 'tostecas.diana.com' resuelva a su IP
 @       IN  A   172.30.0.3
 
-; Hace que 'ns.nachos.diana.com' resuelva
+; Hace que 'ns.tostecas.diana.com' resuelva
 ns      IN  A   172.30.0.3
 
+; Hace que 'wwww.tostecas.diana.com' resuelva
 www     IN  A   172.30.0.3

@@ -14,4 +14,5 @@ $TTL 604800
 ; Hace que 'ns.nachos.diana.com' resuelva
 ns      IN  A   172.30.0.2
 
+; Hace que 'www.nachos.diana.com' resuelva
 www     IN  A   172.30.0.2

@@ -2,6 +2,6 @@ options {
     directory "/var/cache/bind";
     recursion yes;
     allow-query { any; };
+    listen-on { any; };
     dnssec-validation no;
-    listen-on-v6 { any; };
 };
